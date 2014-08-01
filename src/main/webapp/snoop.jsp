@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
 <HEAD>
 <TITLE>JBossAS7 JSP snoop page</TITLE>

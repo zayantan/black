@@ -14,11 +14,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.executable>${env.OPENSHIFT_WILDFLY_DIR}usr/lib/jvm/jdk1.8.0_05/bin/javac</maven.compiler.executable>		
+		<maven.compiler.executable>${env.OPENSHIFT_WILDFLY_DIR}usr/lib/jvm/jdk1.8.0_05/bin/javac</maven.compiler.executable>
 		<maven.compiler.fork>true</maven.compiler.fork>
 	</properties>
 
 	<dependencies>
+		<!-- mysql driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.31</version>
+		</dependency>
+		
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -134,4 +141,15 @@
 			</build>
 		</profile>
 	</profiles>
+	<url>http://black-zajntan.rhcloud.com/</url>
+	<description>Black arts Moonshine. Homebrewed!</description>
+	<inceptionYear>2014-08-01</inceptionYear>
+	<organization>
+		<name>Zajntan LLC</name>
+		<url>http://www.zajntan.com/</url>
+	</organization>
+	<ciManagement>
+		<system>jenkins</system>
+		<url>https://jenkins-zajntan.rhcloud.com/job/black-build/</url>
+	</ciManagement>
 </project>
