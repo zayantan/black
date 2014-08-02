@@ -152,4 +152,10 @@
 		<system>jenkins</system>
 		<url>https://jenkins-zajntan.rhcloud.com/job/black-build/</url>
 	</ciManagement>
+	<scm>
+		<url>ssh://53b94e0a500446d2b6000b00@black-zajntan.rhcloud.com/~/git/black.git/</url>
+		<connection>ssh</connection>
+		<developerConnection>zayantan@gmail.com</developerConnection>
+		<tag>origin</tag>
+	</scm>
 </project>
