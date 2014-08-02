@@ -54,14 +54,14 @@ public class RatesModel {
 	/**
 	 * @return the legalEntity
 	 */
-	public String getLegalEntity() {
+	public BalanceSheetModel getLegalEntity() {
 		return legalEntity;
 	}
 
 	/**
 	 * @param legalEntity the legalEntity to set
 	 */
-	public void setLegalEntity(String legalEntity) {
+	public void setLegalEntity(BalanceSheetModel legalEntity) {
 		this.legalEntity = legalEntity;
 	}
 
