@@ -6425,6 +6425,8 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-family: 'Segoe','Courier New','Monospace';
+  font-weight: 800;
 }
 h4,
 .h4 {

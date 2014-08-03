@@ -60,7 +60,7 @@ public class BalanceSheetModel {
 	
 	// Current Liabilities
 	@Column(name = "ACCOUNTS_PAYABLE")
-	private Long acc_pay;
+	private Long accPay;
 	
 	@Column(name = "DEFERRED_DIVIDENDS")
 	private Long defDiv;
@@ -84,7 +84,7 @@ public class BalanceSheetModel {
 	private Long currentPortionOfLTD;
 	
 	@Column(name = "ACCRUED_COMPENSATION")
-	private Long accr_compensation;
+	private Long accrCompensation;
 	
 	@Column(name = "INCOME_TAX", nullable=false)
 	private Long tax;
@@ -94,6 +94,9 @@ public class BalanceSheetModel {
 	
 	@Column(name = "DEF_UNEARNED_REVENUE")
 	private Long defUnearnRev;
+	
+	@Column(name = "INTEREST_PAYMENTS")
+	private Long intPay;
 	
 	@Column(name = "OTHER_CURRENT_LIABITLITES")
 	private Long ocl;
@@ -130,18 +133,34 @@ public class BalanceSheetModel {
 	@Column(name = "LEASE_OBLIGATIONS")
 	private Long lease;
 	
+	@Column(name = "LITIGATION")
+	private Long litigation;
+	
+	@Column(name = "OTHER_OFF_BS_ITEMS")
+	private Long oOBSItems;
+	
+	@Column(name = "TOTAL_OFF_BS_ITEMS")
+	private Long totOBSItems;
+	
+	// LTL
+	@Column(name = "BAD_DEBT")
+	private Long bd;
+	
+	@Column(name = "LONG_TERM_DEBT")
+	private Long ltd;
+	
+	@Column(name = "RND_LIABILITY")
+	private Long rndL;
+	
+	@Column(name = "CAPITALISED_PAYMENTS")
+	private Long capPay;
+	
 	// Cash Flow
 	@Column(name = "RET_EARNINGS")
 	private Long retEarnings;
 	
 	@Column(name = "REVENUE", nullable=false)
 	private Long revenue;
-	
-	@Column(name = "BAD_DEBT")
-	private Long bd;
-	
-	@Column(name = "LONG_TERM_DEBT")
-	private Long ltd;
 	
 	@Column(name = "OPERATING_INCOME", nullable=false)
 	private Long operIncome;
@@ -176,6 +195,7 @@ public class BalanceSheetModel {
 	@Column(name = "WC", nullable=false)
 	private Long wc;
 
+	//Financial Ratios
 	@Column(name = "CURRENT_RATIO")
 	private Long cr;
 	
@@ -351,10 +371,66 @@ public class BalanceSheetModel {
 	}
 
 	/**
+	 * @return the rndL
+	 */
+	public Long getRndL() {
+		return rndL;
+	}
+
+	/**
+	 * @param rndL the rndL to set
+	 */
+	public void setRndL(Long rndL) {
+		this.rndL = rndL;
+	}
+
+	/**
+	 * @return the capPay
+	 */
+	public Long getCapPay() {
+		return capPay;
+	}
+
+	/**
+	 * @param capPay the capPay to set
+	 */
+	public void setCapPay(Long capPay) {
+		this.capPay = capPay;
+	}
+
+	/**
 	 * @param totalCash the totalCash to set
 	 */
 	public void setTotalCash(Long totalCash) {
 		this.totalCash = totalCash;
+	}
+
+	/**
+	 * @return the litigation
+	 */
+	public Long getLitigation() {
+		return litigation;
+	}
+
+	/**
+	 * @param litigation the litigation to set
+	 */
+	public void setLitigation(Long litigation) {
+		this.litigation = litigation;
+	}
+
+	/**
+	 * @return the oOBSItems
+	 */
+	public Long getoOBSItems() {
+		return oOBSItems;
+	}
+
+	/**
+	 * @param oOBSItems the oOBSItems to set
+	 */
+	public void setoOBSItems(Long oOBSItems) {
+		this.oOBSItems = oOBSItems;
 	}
 
 	/**
@@ -369,6 +445,20 @@ public class BalanceSheetModel {
 	 */
 	public void setStIssue(Long stIssue) {
 		this.stIssue = stIssue;
+	}
+
+	/**
+	 * @return the totOBSItems
+	 */
+	public Long getTotOBSItems() {
+		return totOBSItems;
+	}
+
+	/**
+	 * @param totOBSItems the totOBSItems to set
+	 */
+	public void setTotOBSItems(Long totOBSItems) {
+		this.totOBSItems = totOBSItems;
 	}
 
 	/**
@@ -472,15 +562,15 @@ public class BalanceSheetModel {
 	/**
 	 * @return the acc_pay
 	 */
-	public Long getAcc_pay() {
-		return acc_pay;
+	public Long getAccPay() {
+		return accPay;
 	}
 
 	/**
 	 * @param acc_pay the acc_pay to set
 	 */
-	public void setAcc_pay(Long acc_pay) {
-		this.acc_pay = acc_pay;
+	public void setAccPay(Long accPay) {
+		this.accPay = accPay;
 	}
 
 	/**
@@ -523,6 +613,20 @@ public class BalanceSheetModel {
 	 */
 	public void setCogs(Long cogs) {
 		this.cogs = cogs;
+	}
+
+	/**
+	 * @return the intPay
+	 */
+	public Long getIntPay() {
+		return intPay;
+	}
+
+	/**
+	 * @param intPay the intPay to set
+	 */
+	public void setIntPay(Long intPay) {
+		this.intPay = intPay;
 	}
 
 	/**
@@ -584,15 +688,15 @@ public class BalanceSheetModel {
 	/**
 	 * @return the accr_compensation
 	 */
-	public Long getAccr_compensation() {
-		return accr_compensation;
+	public Long getAccrCompensation() {
+		return accrCompensation;
 	}
 
 	/**
 	 * @param accr_compensation the accr_compensation to set
 	 */
-	public void setAccr_compensation(Long accr_compensation) {
-		this.accr_compensation = accr_compensation;
+	public void setAccrCompensation(Long accrCompensation) {
+		this.accrCompensation = accrCompensation;
 	}
 
 	/**

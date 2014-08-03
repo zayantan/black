@@ -1,63 +1,422 @@
 <!doctype html>
 <html ng-app>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Welcome to Project Moonshine</title>
-		<meta name="author" content="sayantan" />
-		<link rel="stylesheet" href="./opt/css/bootswatch.css" />
-		<script src="opt/js/angular.js"></script>
-	</head>
-	<body>
-		<section class='container'>
-			<hgroup>
-				<h1 align="center">Welcome to Project Teabag</h1>
-			</hgroup>
-			<div class="row">
-				<section class='col-xs-12 col-sm-6 col-md-6'>
-					<section>
-						<h2>{{ 'Assets' }}</h2>
-					</section>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Project Moonshine</title>
+<meta name="author" content="sayantan" />
+<link rel="stylesheet" href="./opt/css/bootswatch.css" />
+<script src="opt/js/angular.js"></script>
+</head>
+<body>
+	<section class='container'>
+		<hgroup>
+			<h1 align="center">Welcome to Project Teabag</h1>
+		</hgroup>
+		<div class="row">
+			<section class='col-xs-12 col-sm-6 col-md-6'>
+				<section>
+					<h3 align="center">{{ 'Assets' }}</h3>
 				</section>
-				<section class="col-xs-12 col-sm-6 col-md-6">
-					<section>
-						<h2>{{ 'Liabilities' }}</h2>
-						<div id="content" ng-view>
-							Contains a list of Current, Long-term and Contingent Liabilities.
+				<section>
+					<h5>{{ 'Current Assets' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Cash: <input type="text" class="form-control "
+								name="cash" value="" />
 						</div>
-					</section>
-					<section>
-						<h3>{{ 'Current Liabilities' }}</h3>
-						<div class="col-xs-6">
-							<input type="text" class="form-control" name="currRatio" value="something"/>
-						</div>
-						<h3>{{ 'Long Term Liabilities' }}</h3>
-						<p>
-							<input type="text" name="thisone" value="something"/>
-						</p>
-						<h3>{{ 'Off Balance Sheet Items' }}</h3>
-						<p>
-							<a href="./NewFile.jsp">ajsdfh</a>
-						</p>
-					</section>
-				</section>
-			</div>
-			<footer>
-				<div align="center">
-					<input type="button" class="btn btn-large btn-success" name="saveBS" value="SUBMIT" />
-				</div>
-				<br><br>
-				<div align="right">
-					<div class="logo">
-						<a href="https://www.openshift.com/"></a>
 					</div>
-					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit?usp=sharing">COPYRIGHT
-						&#169; 2014 ZAJNTAN LLC. All Rights Reserved.</a>
+					<div class="col-xs-6">
+						<div class="mark">
+							Cash Equivalents: <input type="text" class="form-control"
+								name="cashEquivalents" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Total Cash: <input type="text" class="form-control"
+								name="totalCash" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Paid-up Capital: <input type="text" class="form-control"
+								name="stIssue" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Stock Repurchases: <input type="text" class="form-control"
+								name="stRepurchase" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Cash Dividends Paid: <input type="text" class="form-control"
+								name="div" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Short Term Investments: <input type="text" class="form-control"
+								name="stInvest" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Accounts Receivable: <input type="text" class="form-control"
+								name="accReceive" value="" />
+						</div>
+					</div>					<div class="col-xs-6">
+						<div class="mark">
+							Inventory: <input type="text" class="form-control"
+								name="inventory" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Other Current Assets: <input type="text" class="form-control"
+								name="oca" value="" />
+						</div>
+					</div>					
+					
+					<h5>{{ 'Long Term Assets' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Plant Property and Equipment: <input type="text" class="form-control"
+								name="ppe" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Acquisition: <input type="text" class="form-control"
+								name="acquisition" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Proceeds from Sale of Fixed Assets: <input type="text" class="form-control"
+								name="saleFA" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Long Term Investments: <input type="text" class="form-control"
+								name="lti" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Goodwill: <input type="text" class="form-control"
+								name="goodwill" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Other Itangible Assets: <input type="text" class="form-control"
+								name="oIntan" value="" />
+						</div>
+					</div>
+					
+					
+					<h5>{{ 'Income Statement' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Retained Earnings: <input type="text" class="form-control"
+								name="retEarnings" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Revenue: <input type="text" class="form-control"
+								name="revenue" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Operating Income: <input type="text" class="form-control"
+								name="operIncome" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Revenue: <input type="text" class="form-control"
+								name="revenue" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Operating Income: <input type="text" class="form-control"
+								name="operIncome" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Non Equity Revenue: <input type="text" class="form-control"
+								name="nonEquityRevenue" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Total Shareholder Equity: <input type="text" class="form-control"
+								name="tse" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Minority Interest: <input type="text" class="form-control"
+								name="minInterest" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Capital Expenditure: <input type="text" class="form-control"
+								name="capex" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Net Operating Profit/Loss after Tax: <input type="text" class="form-control"
+								name="noplat" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Operating Free Cash Flow: <input type="text" class="form-control"
+								name="ofcf" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Free Operating Cash Flow: <input type="text" class="form-control"
+								name="ffcf" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Enterprise Value: <input type="text" class="form-control"
+								name="ev" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Change in Working Capital: <input type="text" class="form-control"
+								name="wc" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Free Cash Flow to Equity: <input type="text" class="form-control"
+								name="fcfe" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Free Cash Flow to Firm: <input type="text" class="form-control"
+								name="fcff" value="" />
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="col-xs-12 col-sm-6 col-md-6">
+				<section>
+					<h3 align="center">{{ 'Liabilities' }}</h3>
+					<div id="content" ng-view>Contains a list of Current,
+						Long-term and Contingent Liabilities.</div>
+				</section>
+				<section>
+					<h5>{{ 'Current Liabilities' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Accounts Payable: <input type="text" class="form-control"
+								name="accPay" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Deferred Dividends: <input type="text" class="form-control"
+								name="defDiv" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Cost of Goods Sold: <input type="text" class="form-control"
+								name="cogs" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							FIFO/LIFO: <input type="text" class="form-control"
+								name="fl" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Accounts Payable: <input type="text" class="form-control"
+								name="accPay" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Deferred Dividends: <input type="text" class="form-control"
+								name="defDiv" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Cost of Goods Sold: <input type="text" class="form-control"
+								name="cogs" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							FIFO/LIFO: <input type="text" class="form-control"
+								name="fl" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Depreciation/Amortization: <input type="text" class="form-control"
+								name="depr" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Recognised Unearned Revenue: <input type="text" class="form-control"
+								name="recogUnearnRev" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Current Portion of Long Term Debt: <input type="text" class="form-control"
+								name="currentPortionOfLTD" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Accrued Compensation: <input type="text" class="form-control"
+								name="accrCompensation" value="something" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Income Tax: <input type="text" class="form-control"
+								name="tax" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Deferred Taxes: <input type="text" class="form-control"
+								name="defTax" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Deferred Unearned Revenue: <input type="text" class="form-control"
+								name="defUnearnRev" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Interest Payments: <input type="text" class="form-control"
+								name="intPay" value="" />
+						</div>
+					</div>					
+					<div class="col-xs-6">
+						<div class="mark">
+							Other Curret Liabilities: <input type="text" class="form-control"
+								name="ocl" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Total Current Liabilities: <input type="text" class="form-control"
+								name="tcl" value="" />
+						</div>
+					</div>
+					<h5>{{ 'Long Term Liabilities' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Bad Debt: <input type="text" class="form-control"
+								name="bd" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Long Term Debt: <input type="text" class="form-control"
+								name="ltd" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Capitalised Payments: <input type="text" class="form-control"
+								name="capPay" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							R&D Liability: <input type="text" class="form-control"
+								name="rndL" value="" />
+						</div>
+					</div>
+					<h5>{{ 'Off Balance Sheet Items' }}</h5>
+					<div class="col-xs-6">
+						<div class="mark">
+							Principle Payments: <input type="text" class="form-control"
+								name="ppl" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Purchase Commitments: <input type="text" class="form-control"
+								name="purCommit" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Lease Obligations: <input type="text" class="form-control"
+								name="lease" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Probable/possible Litigation Damage: <input type="text" class="form-control"
+								name="litigation" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Other Off Balance Sheet Items: <input type="text" class="form-control"
+								name="oOBSItems" value="" />
+						</div>
+					</div>
+					<div class="col-xs-6">
+						<div class="mark">
+							Total Off Balance Sheet Items: <input type="text" class="form-control"
+								name="totOBSItems" value="" />
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<footer>
+			<div align="center">
+				<input type="button" class="btn btn-large btn-success" name="saveBS"
+					value=" S U B M I T " />
+			</div>
+			<br>
+			<br>
+			<div align="right">
+				<div class="logo">
+					<a href="https://www.openshift.com/"></a>
 				</div>
-			</footer>
-		</section>
-	</body>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+					href="https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit?usp=sharing">COPYRIGHT
+					&#169; 2014 ZAJNTAN LLC. All Rights Reserved.</a>
+			</div>
+		</footer>
+	</section>
+</body>
 </html>
