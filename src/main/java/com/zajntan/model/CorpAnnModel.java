@@ -17,15 +17,11 @@ import javax.persistence.Table;
 //org.hibernate.annotations.GenericGenerator(name = "hibernate-uuid", strategy = "uuid")
 //NamedQueries({ @NamedQuery(name = "nextMessageIdList", query = "select i from MessageHibModel i ") }) //where i.description like :desc
 
-public class CorpAnnModel {
+public class CorpAnnModel extends BaseModel{
 	@Id
 	//GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "CORP_ANN_ID")
 	private Long corpAnnId;
-	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "LEGAL_ENTITY_BALANCESHEET_FK, nullable=false")
-	public BalanceSheetModel legalEntity;
 	
 	@Column(name = "RATING")
 	private String rating;

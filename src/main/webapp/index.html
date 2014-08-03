@@ -1,47 +1,65 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to Project Moonshine</title>
-<meta name="author" content="sayantan" />
-<link rel="stylesheet" href="./opt/css/bootstrap.css">
-</head>
-<body>
-	<section class='container'>
-		<hgroup>
-			<h1>Welcome to your WildFly 8 application on OpenShift deployed
-				using eclipse</h1>
-		</hgroup>
-		<div class="row">
-			<section class='col-xs-12 col-sm-6 col-md-6'>
-				<section>
-					<h2>Deploying code changes</h2>
-
+<html ng-app="balanceSheet">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome to Project Moonshine</title>
+		<meta name="author" content="sayantan" />
+		<link rel="stylesheet" href="./opt/css/bootswatch.css" />
+		<script src="opt/js/angular.js"></script>
+		<script src="opt/js/angular-resource.js"></script>
+	</head>
+	<body>
+		<section class='container'>
+			<hgroup>
+				<h1 align="center">Welcome to Project Teabag</h1>
+			</hgroup>
+			<div class="row">
+				<section class='col-xs-12 col-sm-6 col-md-6'>
+					<section>
+						<h2>Assets</h2>
+						
+					</section>
 				</section>
-			</section>
-			<section class="col-xs-12 col-sm-6 col-md-6">
-
-				<h2>Managing your application</h2>
-
-				<h3>Web Console</h3>
-				<p>You can use the OpenShift web console to enable additional
-					capabilities via cartridges, add collaborator access
-					authorizations, designate custom domain aliases, and manage domain
-					memberships.</p>
-
-				<h3>Command Line Tools</h3>
-			</section>
-		</div>
-		<footer>
-			<div class="logo">
-				<a href="https://www.openshift.com/"></a>
+				<section class="col-xs-12 col-sm-6 col-md-6">
+					<section>
+						<h2>Liabilities</h2>
+						<div id="content" ng-view>
+							Contains a list of Current, Long-term and Contingent Liabilities.
+						</div>
+					</section>
+					<section>
+						<h3>Current Liabilities</h3>
+						<div class="col-xs-6">
+							<input type="text" class="form-control" name="currRatio" value="something"/>
+						</div>
+						<h3>Long Term Liabilities</h3>
+						<p>
+							<input type="text" name="thisone" value="something"/>
+						</p>
+						<h3>Off Balance Sheet Items</h3>
+						<p>
+							<a href="./NewFile.jsp">ajsdfh</a>
+						</p>
+					</section>
+				</section>
 			</div>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-				href="https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit?usp=sharing">COPYRIGHT
-				&#169; 2014 ZAJNTAN LLC. All Rights Reserved.</a>
-		</footer>
-	</section>
-</body>
+			<footer>
+				<div align="center">
+					<input type="button" class="btn btn-large btn-success" name="saveBS" value="SUBMIT" />
+				</div>
+				<br><br>
+				<div align="right">
+					<div class="logo">
+						<a href="https://www.openshift.com/"></a>
+					</div>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+						href="https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit?usp=sharing">COPYRIGHT
+						&#169; 2014 ZAJNTAN LLC. All Rights Reserved.</a>
+				</div>
+			</footer>
+		</section>
+	</body>
 </html>

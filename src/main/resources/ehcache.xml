@@ -149,4 +149,13 @@
 	<cache name="com.sayantan.actionConfig.model.MessageHibModel"
 		maxElementsInMemory="50000" eternal="false" timeToIdleSeconds="1800"
 		timeToLiveSeconds="100000" overflowToDisk="false" />
+	<cache name="com.sayantan.actionConfig.model.BalanceSheetModel"
+		maxElementsInMemory="50000" eternal="false" timeToIdleSeconds="1800"
+		timeToLiveSeconds="100000" overflowToDisk="false" />
+	<cache name="com.sayantan.actionConfig.model.RatesModel"
+		maxElementsInMemory="50000" eternal="false" timeToIdleSeconds="1800"
+		timeToLiveSeconds="100000" overflowToDisk="false" />
+	<cache name="com.sayantan.actionConfig.model.CorpAnnModel"
+		maxElementsInMemory="50000" eternal="false" timeToIdleSeconds="1800"
+		timeToLiveSeconds="100000" overflowToDisk="false" />	
 </ehcache>

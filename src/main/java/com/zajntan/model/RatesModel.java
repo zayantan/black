@@ -13,14 +13,10 @@ import javax.persistence.Table;
 @org.hibernate.annotations.Cache(usage = org.hibernate.annotations.CacheConcurrencyStrategy.READ_WRITE)
 //org.hibernate.annotations.GenericGenerator(name = "hibernate-uuid", strategy = "uuid")
 //NamedQueries({ @NamedQuery(name = "nextMessageIdList", query = "select i from MessageHibModel i ") }) //where i.description like :desc
-public class RatesModel {
+public class RatesModel extends BaseModel{
 	@Id
 	@Column(name = "RATES_ID")
 	private Long ratesId;
-
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "LEGAL_ENTITY_BALANCESHEET_FK, nullable=false")
-	public BalanceSheetModel legalEntity;
 
 	@Column(name = "STD", nullable=false)
 	private Long std;
@@ -49,20 +45,6 @@ public class RatesModel {
 	 */
 	public void setRatesId(Long ratesId) {
 		this.ratesId = ratesId;
-	}
-
-	/**
-	 * @return the legalEntity
-	 */
-	public BalanceSheetModel getLegalEntity() {
-		return legalEntity;
-	}
-
-	/**
-	 * @param legalEntity the legalEntity to set
-	 */
-	public void setLegalEntity(BalanceSheetModel legalEntity) {
-		this.legalEntity = legalEntity;
 	}
 
 	/**

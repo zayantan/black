@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class BalanceSheetModel {
 	@Id
 	@Column(name = "LEGAL_ENTITY")
-	public String legalEntity;
+	private String legalEntity;
 	
 	// I personally think that this should be the id.
 	@GeneratedValue(strategy = GenerationType.AUTO)

@@ -8,7 +8,10 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 
 		<class>com.zajntan.model.AuthenticationModel</class>
+		<class>com.zajntan.model.BalanceSheetModel</class>
+		<class>com.zajntan.model.CorpAnnModel</class>
 		<class>com.zajntan.model.MessageHibModel</class>
+		<class>com.zajntan.model.RatesModel</class>
 		<class>com.zajntan.model.RegisterModel</class>
 
 		<properties>
