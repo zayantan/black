@@ -1103,11 +1103,13 @@ html {
 }
 
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #404040;
+	background-color: #e5e5e5;
+	font-family: 'Segoe UI', 'Segoe', "Helvetica Neue", Helvetica, "Liberation Sans", Arial,
+		sans-serif;
 	font-size: 14px;
 	line-height: 1.42857143;
-	color: #555555;
-	background-color: #ffffff;
+
 }
 
 input, button, select, textarea {
