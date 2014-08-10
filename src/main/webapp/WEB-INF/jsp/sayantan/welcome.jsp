@@ -5,45 +5,10 @@
 <!DOCTYPE html>
 <html ng-app>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="sayantan" />
-<title>Welcome to Project Moonshine</title>
-<meta name="author" content="sayantan" />
-<link rel="stylesheet" href="../opt/css/default.css">
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="../opt/css/bootstrap.css" />
-<link rel="stylesheet" href="../opt/css/bootstrap-theme.css" />
-<link rel="stylesheet" href="../opt/css/bootswatch.css" />
-<link rel="stylesheet" href="../opt/css/bootswatch.css" />
-<script src="../opt/js/angular.js"></script>
 </head>
 <body>
 	<header>
 		<jsp:include page="header.jsp" />
-		<div align="right">
-			<ul dir="rtl" type="square">
-				<!-- Language setting -->
-				<li><s:url id="url" action="goto_index_welcome">
-						<s:param name="request_locale">en</s:param>
-					</s:url> <s:a href="%{url}">English</s:a></li>
-				<li><s:url id="url" action="home">
-						<s:param name="request_locale">es</s:param>
-					</s:url> <s:a href="%{url}">Espanol</s:a></li>
-				<li><s:url id="url" action="home">
-						<s:param name="request_locale">de</s:param>
-					</s:url> <s:a href="%{url}">Deutsch</s:a></li>
-			</ul>
-		</div>
-		<br />
 	</header>
 	<section class='container'>
 		<hgroup>
@@ -234,8 +199,6 @@
 			<section class="col-xs-12 col-sm-6 col-md-6">
 				<section>
 					<h3 align="center">{{ 'Liabilities' }}</h3>
-					<div id="content" ng-view>Contains a list of Current,
-						Long-term and Contingent Liabilities.</div>
 				</section>
 				<section>
 					<h5>{{ 'Current Liabilities' }}</h5>
@@ -411,6 +374,7 @@
 					href="https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit?usp=sharing">COPYRIGHT
 					&#169; 2014 ZAJNTAN LLC. All Rights Reserved.</a>
 			</div>
+			<jsp:include page="footer.jsp" />
 		</footer>
 	</section>
 </body>
