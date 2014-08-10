@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+h1 {
+	font: small-caps;
+	font-family: cursive;
+	font-size: xx-large;
+	font-stretch: ultra-expanded;
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: bolder;
+}
+
+h4 {
+	font-variant: small-caps;
+	font-weight: bolder;
+}

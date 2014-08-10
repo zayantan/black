@@ -1,15 +1,15 @@
 package com.zajntan.action;
 
-import java.util.List;
+import java.util.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.FlushModeType;
-import javax.persistence.Persistence;
+import javax.persistence.*;
+
+import org.hibernate.Criteria;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.tool.hbm2ddl.SchemaExport;
 
 import com.zajntan.model.MessageHibModel;
-
+import com.zajntan.util.DBConnector;
 
 public class HelloWorldHib {
 	
@@ -17,7 +17,7 @@ public class HelloWorldHib {
 
 		// Start EntityManagerFactory
 		EntityManagerFactory emf = Persistence
-				.createEntityManagerFactory("black");  //,new com.zajntan.util.DBConnector().mysql);
+				.createEntityManagerFactory("sayantan", new DBConnector().mysql);
 
 		// First unit of work
 		EntityManager em = emf.createEntityManager();

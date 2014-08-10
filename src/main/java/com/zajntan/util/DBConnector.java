@@ -9,8 +9,8 @@ import java.util.Map;
 public class DBConnector {
 	public Map<String, String> mysql = new HashMap<String, String>();
 	private MessageDigest md;
-	private String mUname = "root";
-	private String mPassword = "s3rect";
+	private String uname = "root";
+	private String password = "s3rect";
 	private String digest;
 
 	/* mysql doesnt provide any way to provide password as md5 hash input */
@@ -41,7 +41,7 @@ public class DBConnector {
 		mysql.put("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
 		mysql.put("hibernate.connection.url",
 				"jdbc:mysql://localhost:3306/mysql");
-		mysql.put("hibernate.connection.username", mUname );
-		mysql.put("hibernate.connection.password", mPassword);
+		mysql.put("hibernate.connection.username", uname );
+		mysql.put("hibernate.connection.password", password);
 	}
 }
