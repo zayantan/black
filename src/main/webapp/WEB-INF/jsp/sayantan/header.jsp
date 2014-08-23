@@ -7612,7 +7612,10 @@ pre code {
 				<s:a accesskey="lll" href="logout">Logout</s:a>
 			</s:if>
 			<s:else>
+				<s:url id="login" action="fwd_index_login" />
 				<s:url id="register" action="fwd_index_register" />
+				<s:a href="%{login}">Login</s:a>
+				&nbsp;/&nbsp;
 				<s:a href="%{register}">Register</s:a>
 			</s:else>
 			<s:property value="#session.FName" />

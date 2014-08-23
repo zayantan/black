@@ -4,51 +4,44 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "REGISTER_USER")
-@org.hibernate.annotations.GenericGenerator(name = "hibernate-uuid", strategy = "uuid")
-@NamedQueries({ @NamedQuery(name = "nextMessageIdList", query = "select i from MessageHibModel i ") }) //where i.description like :desc
 public class RegisterModel {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "MESSAGE_ID")
-	private Long id;
+	@Column(name = "USER_NAME")
+	private Long uid;
 
-	@Column(name = "MESSAGE_TEXT")
-	@GeneratedValue(generator = "hibernate-uuid")
-	private String text;
-
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "NEXT_MESSAGE_ID")
-	private MessageHibModel nextMessage;
+	@Column(name = "USER_PASSCODE")
+	private String upass;
 
 	public RegisterModel() {
 	}
 
-	public RegisterModel(String text) {
-		this.text = text;
+	/**
+	 * @return the uid
+	 */
+	public Long getUid() {
+		return uid;
 	}
 
-	public Long getId() {
-		return id;
+	/**
+	 * @param uid the uid to set
+	 */
+	public void setUid(Long uid) {
+		this.uid = uid;
 	}
 
-	private void setId(Long id) {
-		this.id = id;
+	/**
+	 * @return the upass
+	 */
+	public String getUpass() {
+		return upass;
 	}
 
-	public String getText() {
-		return text;
+	/**
+	 * @param upass the upass to set
+	 */
+	public void setUpass(String upass) {
+		this.upass = upass;
 	}
 
-	public void setText(String text) {
-		this.text = text;
-	}
-
-	public MessageHibModel getNextMessage() {
-		return nextMessage;
-	}
-
-	public void setNextMessage(MessageHibModel nextMessage) {
-		this.nextMessage = nextMessage;
-	}
 }

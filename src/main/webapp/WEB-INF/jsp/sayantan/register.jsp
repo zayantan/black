@@ -7,9 +7,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="author" content="sayantan" />
-		<title> O D D S - Register </title>
-		<link rel="stylesheet" href="../css/default.css">
-		<link rel="stylesheet" href="../css/login.css">
+		<title>Project Teabag</title>
 	</head>
 	<body>
 		<jsp:include page="header.jsp" />

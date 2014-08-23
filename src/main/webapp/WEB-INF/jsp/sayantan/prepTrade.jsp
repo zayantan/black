@@ -2,15 +2,14 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags" prefix="s" %>
     
+<!-- This page is the Digital Playground for SEX -->    
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome To Project Moonshine -- Home</title>
+<title>Insert title here</title>
 </head>
-	<body>
-		<jsp:include page="header.jsp" />
-		<jsp:include page="homePage.jsp" />
-		<jsp:include page="footer.jsp" />
-	</body>
+<body>
+
+</body>
 </html>

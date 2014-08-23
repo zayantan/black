@@ -25,10 +25,10 @@
                             %>
                             <P align=center> | <A class=copyright href="<%=server%>/footer/help.html">Help</A> &nbsp;|
                             <A href= "<%=server%>/footer/notes.html">Release Notes</A> &nbsp;|
-                            <A href= "<%=server%>/footer/Copyright.jsp">Copyright</A> &nbsp;|
+                            <A href= "<%=server%>/footer/copyright.jsp">Copyright</A> &nbsp;|
                             <A href= "<%=server%>">Home</A> &nbsp;|
                             <BR>
-                            <P align="center"><FONT face="Arial" size="1">StPred - Your Ultimate server for Protein Secondary Structure Prediction </FONT></P> 
+                            <P align="center"><FONT face="Arial" size="1">Moonshine - Home brewed project by Zajntan LLC </FONT></P> 
                     </FONT></TD>
                 </TR>
             </TBODY>
