@@ -3,7 +3,7 @@
 <%@ taglib uri="/struts-tags" prefix="s"%>
 
 <!DOCTYPE html>
-<html ng-app>
+<html data-ng-app="dataViewApp">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -18,14 +18,7 @@
 		<small>Someone famous in <cite title="Source Title">Source
 				Title</cite></small>
 	</blockquote>
-	<h3 class="panel-heading">All the Difference is rooted out of
-		Indifference</h3>
-	<div class="container">
-		<hgroup>
-			<h1 align="center">Welcome to Project Teabag</h1>
-
-		</hgroup>
-		<table class="table table-striped table-bordered table-hover">
+		<table class="table table-striped table-bordered table-hover table-responsive">
 			<thead>
 				<tr>
 					<th>First Name</th>
@@ -47,6 +40,5 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
 </body>
 </html>

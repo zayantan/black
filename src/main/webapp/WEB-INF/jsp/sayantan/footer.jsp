@@ -15,6 +15,12 @@
         <title>JSP Page</title>
     </head>
     <body>
+    	<br> <br>
+		<div align="right">
+			<div class="logo">
+				<a href="https://www.openshift.com/"></a>
+			</div>
+		</div>
         <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%" ALIGN=CENTER vAlign=bottom>
             <TBODY>
                 <TR>

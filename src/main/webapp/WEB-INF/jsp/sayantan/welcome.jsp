@@ -14,12 +14,6 @@
 		<jsp:include page="landing.jsp" />
 	</section>
 	<footer>
-		<br> <br>
-		<div align="right">
-			<div class="logo">
-				<a href="https://www.openshift.com/"></a>
-			</div>
-		</div>
 		<jsp:include page="footer.jsp" />
 	</footer>
 </body>

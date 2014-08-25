@@ -23,8 +23,6 @@
 	&nbsp;/&nbsp;
 	<s:a href="%{dataView}">DATA VIEW</s:a>
 	&nbsp;/&nbsp;
-	<s:a href="%{dataView}">DATA VIEW</s:a>
-	&nbsp;/&nbsp;
 	<s:a href="%{tradeView}">TRADE VIEW</s:a>
 	&nbsp;/&nbsp;
 	<s:a href="%{regresView}">REGRESSIONS</s:a>

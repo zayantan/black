@@ -1,16 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html ng-app>
+<html data-ng-app="dataEntryApp">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<hgroup>
-		<h1 align="center">Welcome to Project Teabag</h1>
-	</hgroup>
-	<form class="form-horizontal">
+	<form class="form-horizontal well">
 		<div class="form-group">
 			<div class="row">
 				<section class='col-xs-12 col-sm-6 col-md-6'>
@@ -313,7 +310,7 @@
 						</div>
 						<div class="col-xs-6">
 							<div class="">
-								R&D Liability: <input type="text" class="form-control"
+								R&amp;D Liability: <input type="text" class="form-control"
 									name="rndL" value="" />
 							</div>
 						</div>
@@ -357,6 +354,7 @@
 					</section>
 				</section>
 			</div>
+			<br/><br/>
 			<div class="form-group">
 				<div align="center">
 					<input type="button" class="btn btn-large btn-success"
@@ -364,5 +362,6 @@
 				</div>
 			</div>
 		</div>
+	</form>
 </body>
 </html>
