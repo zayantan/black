@@ -1,7 +1,8 @@
 package com.zajntan.util;
 
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
@@ -16,7 +17,7 @@ public abstract class AppSupport extends ActionSupport implements ModelDriven<Ob
 	private static final long serialVersionUID = -864723033012450641L;
 	
 	//abstract protected Object getClassSig();
-	protected Logger logger = Logger.getLogger(AppSupport.class);
+	protected Logger logger = LogManager.getLogger(AppSupport.class);
 	protected AppFormVars appForm;
 	protected DBConnector dbc;
 
