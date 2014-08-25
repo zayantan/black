@@ -5,8 +5,7 @@
 	
 	<persistence-unit name="black" transaction-type="RESOURCE_LOCAL">
 		<description>Moonshine Persistence Unit</description>
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<non-jta-data-source>DefaultDS</non-jta-data-source>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		
 		<class>com.zajntan.model.AuthenticationModel</class>
 		<class>com.zajntan.model.BalanceSheetModel</class>
