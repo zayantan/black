@@ -15,6 +15,10 @@
         <title>JSP Page</title>
     </head>
     <body>
+    	<div class="clearfix"></div>
+    	<blockquote class="pull-right">
+    		<small>&copy; <cite title="Source Title">Sayantan Ghosh</cite></small>
+    	</blockquote>
     	<br> <br>
 		<div align="right">
 			<div class="logo">
