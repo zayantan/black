@@ -13,8 +13,8 @@
 		<jsp:include page="header.jsp" />
 		<div class="loginArea" align="center">
 			<s:form namespace="/sayantan" action="goto_register_registerSuccess" method="post">
-				<s:textfield name="regUname" key="username" labelposition="left" />
-				<s:password name="regPass" key="password" labelposition="left" />
+				<s:textfield name="regUname" key="username" placeholder="username" labelposition="left" />
+				<s:password name="regPass" key="password" placeholder="password" labelposition="left" />
 				<s:password name="regRPass" key="rpassword" labelposition="left" />
 				<br>
 				<s:submit align="center" />
