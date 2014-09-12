@@ -35,7 +35,7 @@
 				<%--<div style="color:white; background:blue; font-family:Verdana; font-weight:bold; font-size:1.2em">
 					<s:property value="exception"/>
 				</div>--%>
-				<div style="text-align:right;font-family:sans; color: white; font-weight:normal; font-size:0.7em">
+				<div style="text-align:right;font-family:sans; color: red; font-weight:normal; font-size:0.7em">
 						<a href="javascript:;" onmousedown="toggleDiv('mydiv');" shape="circle">View Complete Report</a>
 				</div>
 				<br>

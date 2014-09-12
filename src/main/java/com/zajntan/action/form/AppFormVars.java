@@ -1,5 +1,12 @@
 package com.zajntan.action.form;
 
+import java.util.List;
+
+import javax.json.JsonObject;
+import javax.persistence.EntityManager;
+
+import org.openfaces.org.json.JSONObject;
+
 public class AppFormVars {
 	//login form
     private String username;
@@ -10,6 +17,11 @@ public class AppFormVars {
     private String regPass;
     private String regRPass;
     private String regEmail;
+    private JsonObject jsonvalue;
+    private JSONObject jsonResults;
+    
+    //registered users
+    private List<EntityManager> registeredUsers;
 
     //Exceptions
 	private String fileNotFoundMessage;
@@ -76,6 +88,30 @@ public class AppFormVars {
 
 	public String getDateMismatchMessage() {
 		return dateMismatchMessage;
+	}
+
+	public JsonObject getJsonvalue() {
+		return jsonvalue;
+	}
+
+	public void setJsonvalue(JsonObject jsonvalue) {
+		this.jsonvalue = jsonvalue;
+	}
+
+	public JSONObject getJsonResults() {
+		return jsonResults;
+	}
+
+	public void setJsonResults(JSONObject jsonResults) {
+		this.jsonResults = jsonResults;
+	}
+
+	public List<EntityManager> getRegisteredUsers() {
+		return registeredUsers;
+	}
+
+	public void setRegisteredUsers(List<EntityManager> registeredUsers) {
+		this.registeredUsers = registeredUsers;
 	}
 
 	public void setDateMismatchMessage(String dateMismatchMessage) {

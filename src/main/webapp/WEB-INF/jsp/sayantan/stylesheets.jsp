@@ -6,6 +6,25 @@
 Login Form
  -->
 <style type="text/css">
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), local("Lato-Regular"), url("http://fonts.gstatic.com/s/lato/v10/9k-RPmcnxYEPm8CNFsH2gg.woff") format("woff");
+}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), local("Lato-Bold"), url("http://fonts.gstatic.com/s/lato/v10/wkfQbvfT_02e2IWO3yYueQ.woff") format("woff");
+}
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Lato Italic"), local("Lato-Italic"), url("http://fonts.gstatic.com/s/lato/v10/oUan5VrEkpzIazlUe5ieaA.woff") format("woff");
+}
+
 body {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -491,3 +510,4 @@ div.fixed-table-scroll-outer {
 </style>
 
 <!-- Bootswatch -->
+

@@ -52,16 +52,16 @@
 			<artifactId>log4j-taglib</artifactId>
 			<version>2.0.2</version>
 		</dependency>
-		 <dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-1.2-api</artifactId>
-<version>2.0.2</version>
-</dependency>
- <dependency>
-<groupId>org.apache.logging.log4j</groupId>
-<artifactId>log4j-jcl</artifactId>
-<version>2.0.2</version>
-</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-1.2-api</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-jcl</artifactId>
+			<version>2.0.2</version>
+		</dependency>
 
 		<!-- Hibernate -->
 		<dependency>
@@ -128,6 +128,33 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-ehcache</artifactId>
 			<version>4.3.5.Final</version>
+		</dependency>
+
+		<!-- json -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.8.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.4</version>
 		</dependency>
 
 		<!-- logging -->
@@ -198,6 +225,12 @@
 			<artifactId>xwork-core</artifactId>
 			<version>2.2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-archetype-angularjs</artifactId>
+			<version>2.3.16.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<profiles>

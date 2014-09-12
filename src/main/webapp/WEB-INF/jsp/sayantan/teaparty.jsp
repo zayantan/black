@@ -19,7 +19,7 @@
 			<div
 				style="height: 37px; border-bottom: 1px solid rgb(221, 221, 221); margin-right: 0px;"
 				class="fixed-table-header">
-				<table class="table table-striped table-bordered table-hover table-pagination bootstrap-table table-info table-responsive table-condensed  fixed-table-container" style="width: 801px;">
+				<table class="table table-striped table-bordered table-hover table-pagination bootstrap-table table-info table-responsive table-condensed  fixed-table-container">
 					<thead>
 						<tr>
 							<th class="bs-checkbox" style="width: 36px;"><div
@@ -29,13 +29,13 @@
 								<div style="width: 35px;" class="fht-cell"></div></th>
 							<th style="text-align: right; cursor: pointer;"><div
 									class="th-inner">Item ID</div>
-								<div style="width: 207px;" class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="text-align: center; cursor: pointer;"><div
 									class="th-inner">Item Name</div>
-								<div style="width: 285px;" class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="cursor: pointer;"><div class="th-inner">Item
 									Price</div>
-								<div style="width: 270px;" class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 						</tr>
 					</thead>
 				</table>
@@ -52,16 +52,16 @@
 									class="th-inner">
 									<input name="btSelectAll" type="checkbox">
 								</div>
-								<div class="fht-cell"></div></th>
+								<div style="width: 35px;" class="fht-cell"></div></th>
 							<th style="text-align: right; cursor: pointer;"><div
 									class="th-inner">Item ID</div>
-								<div class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="text-align: center; cursor: pointer;"><div
 									class="th-inner">Item Name</div>
-								<div class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="cursor: pointer;"><div class="th-inner">Item
 									Price</div>
-								<div class="fht-cell"></div></th>
+								<div style="width: 95px;" class="fht-cell"></div></th>
 						</tr>
 					</thead>
 					<tbody>
