@@ -19,7 +19,6 @@ public abstract class AppSupport extends ActionSupport implements ModelDriven<Ob
 	//abstract protected Object getClassSig();
 	protected Logger logger = LogManager.getLogger(AppSupport.class);
 	protected AppFormVars appForm;
-	protected DBConnector dbc;
 
 	protected static final String S = "success";
 	protected static final String E = "error";
@@ -33,7 +32,6 @@ public abstract class AppSupport extends ActionSupport implements ModelDriven<Ob
 	public void prepare() throws Exception {
 		// TODO Auto-generated method stub
 		appForm = new AppFormVars();
-		dbc = new DBConnector();
 	}
 
 	/*

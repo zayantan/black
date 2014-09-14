@@ -5,7 +5,6 @@ import java.util.List;
 import javax.json.JsonObject;
 import javax.persistence.EntityManager;
 
-import org.openfaces.org.json.JSONObject;
 
 public class AppFormVars {
 	//login form
@@ -18,7 +17,7 @@ public class AppFormVars {
     private String regRPass;
     private String regEmail;
     private JsonObject jsonvalue;
-    private JSONObject jsonResults;
+    //private JSONObject jsonResults;
     
     //registered users
     private List<EntityManager> registeredUsers;
@@ -98,14 +97,14 @@ public class AppFormVars {
 		this.jsonvalue = jsonvalue;
 	}
 
-	public JSONObject getJsonResults() {
+/*	public JSONObject getJsonResults() {
 		return jsonResults;
 	}
 
 	public void setJsonResults(JSONObject jsonResults) {
 		this.jsonResults = jsonResults;
 	}
-
+*/
 	public List<EntityManager> getRegisteredUsers() {
 		return registeredUsers;
 	}

@@ -3,9 +3,6 @@ package com.zajntan.action;
 import java.util.HashMap;
 import java.util.List;
 
-import javax.json.Json;
-import javax.json.JsonBuilderFactory;
-import javax.json.JsonObject;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -14,7 +11,6 @@ import javax.persistence.Persistence;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openfaces.org.json.JSONObject;
 
 import com.zajntan.model.RegisterModel;
 import com.zajntan.util.AppSupport;
@@ -29,11 +25,6 @@ public class Delegate_registerAction extends AppSupport {
 	RegisterModel loadedMsg;
 	List<EntityManager> registeredUsers;
 	HashMap<Object,RegisterModel> registeredUsersMap = new HashMap<>();
-	HashMap<String,String> jsonString = new HashMap<>();
-	JsonBuilderFactory factory = Json.createBuilderFactory(jsonString);
-	JsonObject jsonvalue;
-	JSONObject jsonResults = new JSONObject();
-	StringBuilder sb = new StringBuilder();
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -113,34 +104,10 @@ public class Delegate_registerAction extends AppSupport {
 		System.out.println(registeredUsers.size() + " Registered User(s) found:");
 		for (Object m1 : registeredUsers) {
 			loadedMsg = (RegisterModel) m1;
-			logger.info(loadedMsg.getUid() + " " + loadedMsg.getUpass() + " " + registeredUsers.toString());
+			logger.info(loadedMsg.getUid() + " " + loadedMsg.getUpass());
 			registeredUsersMap.put(m1, loadedMsg);
-			jsonResults.put("userid", loadedMsg.getUid());
-			jsonResults.put("userpass", loadedMsg.getUpass());
 		}
-		logger.info("asdfsssssssssssss3");
-		for(Object m1 : registeredUsers) {
-			logger.info(registeredUsersMap.get(m1));
-		}
-			
-
-		// create json object
-		jsonvalue= factory.createObjectBuilder()
-			     .add("userid", loadedMsg.getUid())
-			     .add("userpass", loadedMsg.getUpass())
-			     .build();
-		appForm.setRegisteredUsers(registeredUsers);
-		appForm.setJsonvalue(jsonvalue);
-		appForm.setJsonResults(jsonResults);
-		logger.info("asdf");
-		logger.info(appForm.getJsonvalue());
-		logger.info("asdf");
-		logger.info(appForm.getJsonResults());
-		logger.info("asdf2");
-		logger.info(sb);
-		logger.info("asdf3");
-		
-		
+		appForm.setRegisteredUsers(registeredUsers);		
 		
 		// finally 
 		emf.close();

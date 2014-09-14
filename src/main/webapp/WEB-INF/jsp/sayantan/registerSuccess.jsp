@@ -49,10 +49,7 @@
 									class="th-inner">{{'User ID'}}</div>
 								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="text-align: center; cursor: pointer;"><div
-									class="th-inner">{{'User Name'}}</div>
-								<div style="width: 95px;" class="fht-cell"></div></th>
-							<th style="cursor: pointer;"><div class="th-inner">{{'User
-									Salary'}}</div>
+									class="th-inner">{{'User Pass'}}</div>
 								<div style="width: 95px;" class="fht-cell"></div></th>
 						</tr>
 					</thead>
@@ -72,25 +69,21 @@
 								</div>
 								<div style="width: 35px;" class="fht-cell"></div></th>
 							<th style="text-align: right; cursor: pointer;"><div
-									class="th-inner">Item ID</div>
+									class="th-inner">User ID</div>
 								<div style="width: 95px;" class="fht-cell"></div></th>
 							<th style="text-align: center; cursor: pointer;"><div
-									class="th-inner">Item Name</div>
-								<div style="width: 95px;" class="fht-cell"></div></th>
-							<th style="cursor: pointer;"><div class="th-inner">Item
-									Price</div>
+									class="th-inner">User Name</div>
 								<div style="width: 95px;" class="fht-cell"></div></th>
 						</tr>
 					</thead>
 					<tbody>
 						<s:iterator value="registeredUsers">
-							<tr data-index="0" data-ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+							<tr>
 								<td class="bs-checkbox"><input data-index="0" name="btSelectItem" type="checkbox"></td>
 								<td style="text-align: right;">
 									<s:property value="uid"/>
 								</td>
-								<td style=""><s:property value="upass"/>}</td>
-								<td style="">{{i}}</td>
+								<td style=""><s:property value="upass"/></td>
 							</tr>
 						</s:iterator>
 					</tbody>
