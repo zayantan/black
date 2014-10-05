@@ -7,6 +7,10 @@
 	type="text/javascript"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script
+	src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script
+	src="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 <script type="text/javascript">
 /**
  * @author zhixin wen <wenzhixin2010@gmail.com>
