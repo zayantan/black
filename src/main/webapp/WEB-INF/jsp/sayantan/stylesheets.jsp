@@ -29,6 +29,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: Lato;
+  color: #3B709E;
 }
 
 .form-signin {
