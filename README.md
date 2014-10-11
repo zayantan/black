@@ -1,3 +1,4 @@
-The OpenShift `jbossas` cartridge documentation can be found at:
+The Zajntan `Terms and Conditions` for using, getting involved and distributing the project can be found at:
 
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbossas/README.md
+https://docs.google.com/document/d/1xzNxv0NM2CXgi_88MROs1WjKbD_tKZ6ZPTgQlyEkbbI/edit
+
